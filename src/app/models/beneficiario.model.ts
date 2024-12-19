@@ -1,0 +1,22 @@
+export interface IBeneficiario {
+    Id_Beneficiario: number, 
+    Cuil_beneficiario: string,
+    ApellidoNombre?: string,
+    Domicilio_beneficiario?: string,
+    Nombre_Institucion?: string,
+    Codigo_postal?: string,
+    Provincia_menor: string,
+    Localidad_menor?: string,
+    Periodo_pago: string,
+    Periodo_liquidado: string,
+    Cuil_referente: string,
+    ApellidoNombre_referente?: string,
+    Domicilio_referente?: string,
+    Codigo_postal_referente?: string,
+    Provincia_referente?: string,
+    Localidad_referente?: string,
+    Vinculo_beneficiarioO?: string,
+    Banco_agencia?: string,
+    Id_periodo: number,
+    Nombre_provincia_menor: string
+}

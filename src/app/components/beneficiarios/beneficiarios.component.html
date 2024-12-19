@@ -1,0 +1,29 @@
+@if(!flag) {
+<button (click)="vaciarTabla()">Vaciar tabla</button>
+
+<table>
+    <thead>
+        <tr>
+            <th scope="'col">Id Beneficiario</th>
+            <th scope="'col">Cuil Beneficiario</th>
+            <th scope="'col">Provincia</th>
+            <th scope="'col">Período liquidado</th>
+            <th scope="'col">Cuil Referente</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (beneficiario of listadoBeneficiarios; track $index) {
+        <tr>
+            <td>{{beneficiario.Id_Beneficiario}}</td>
+            <td>{{beneficiario.Cuil_beneficiario}}</td>
+            <td>{{beneficiario.Nombre_provincia_menor}}</td>
+            <td>{{beneficiario.Periodo_liquidado}}</td>
+            <td>{{beneficiario.Cuil_referente}}</td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+}@else {
+<h3>La base de datos está vacía</h3>
+}
