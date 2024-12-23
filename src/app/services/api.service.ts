@@ -18,4 +18,9 @@ export class ApiService {
   public truncateBeneficiarios():Observable<any>{
     return this._http.delete(this.url)
   }
+
+  public addBeneficiarios(beneficiarios: any): Observable<any> {
+    return this._http.post(this.url, beneficiarios);
+  }
+  
 }
