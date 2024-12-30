@@ -1,1 +1,22 @@
-<p>genera-txt works!</p>
+<div class="container">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Generar TXT</h3>
+      </div>
+      <div class="panel-body">
+        <form [formGroup]="generaTxtForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="selectedPeriodoId" class="label label-default">Período de Pago</label>
+            <select id="selectedPeriodoId" class="form-control" formControlName="idPeriodoSeleccionado">
+              @for (periodo of periodos; track $index) {
+                <option value="{{periodo.id}}">{{periodo.nombre}}</option>
+              }
+            </select>
+          </div>
+  
+          <button type="submit" class="btn btn-info" [disabled]="generaTxtForm.invalid">Generar TXT</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

@@ -53,9 +53,9 @@ export class CargaDatosComponent {
         domicilio_actual: row['DOMICILIO ACTUAL'],
         nombre_de_la_institucion: row['NOMBRE DE LA INSTITUCION'],
         codigo_postal: row['CODIGO POSTAL'],
-        nombre_provincia:row['NOMBRE PROVINCIA'],
-        localidad:row['LOCALIDAD'],
-        periodo_pago:row['PERIODO PAGO'],
+        nombre_provincia: row['NOMBRE PROVINCIA'],
+        localidad: row['LOCALIDAD'],
+        periodo_pago: row['PERIODO PAGO'],
         periodo_liquidado: row['PERIODO LIQUIDADO'],
         cuil_referente: row['CUIL REFERENTE'],
         apellido_y_nombre_referente: row['APELLIDO Y NOMBRE REFERENTE'],
@@ -64,12 +64,12 @@ export class CargaDatosComponent {
         privincia_referente: row['PROVINCIA REFERENTE'],
         localidad_referente: row['LOCALIDAD REFERENTE'],
         vinculo_con_el_nnya: row['VINCULO CON EL NNyA'],
-        banco_agencia:row['BANCO AGENCIA'],
-        periodo:row['PERIODO'],
-        provincia:row['PROVINCIA']
+        banco_agencia: row['BANCO AGENCIA'],
+        periodo: row['PERIODO'],
+        provincia: row['PROVINCIA']
 
       }));
-      
+
       console.log('desde data', this.data); // Verifica datos en la consola
     };
 
@@ -93,5 +93,5 @@ export class CargaDatosComponent {
       });
     }
   }
-  
+
 }
